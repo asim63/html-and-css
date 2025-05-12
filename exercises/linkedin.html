@@ -1,22 +1,61 @@
 <!DOCTYPE html>
 <html>
-    <head> 
-        <title>LinkedIn</title>
-        <style>
-            p {
-                margin-top: 0px;
-                margin-bottom: 0px;
-                opacity:0.65;
-                font-size:14px;
-                font-family:Arial;
-            }
+<head>
+  <title>Twitter Text Box</title>
+  <style>
+    .twitter-box {
+      border: 1px solid #e0e0e0;
+      border-radius: 25px;
+      padding: 10px;
+      width: 400px;
+      background-color: #f5f8fa;
+      font-family: Arial;
+    }
 
-        </style>
-    </head>
-    <body>
-        <p class="Email">Email</p>
-        <input class="email" type="text">
-        <p>By clicking Agree & Join,you agree to the Privacy Policy.</p>
-        <button class="agree">Agree & Join</button>
-    </body>
+    
+
+    .twitter-box img {
+      width: 40px;
+      height: 40px;
+      border-radius:100%;
+      object-fit: cover;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    .twitter-box input {
+      border: none;
+      outline: none;
+      width: 63%;
+      font-size: 16px;
+      background: transparent;
+      vertical-align: middle;
+      
+    }
+
+    .twitter-box button {
+      background-color: #1da1f2;
+      color: white;
+      border: none;
+      padding: 10px 22px;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      vertical-align: middle;
+    }
+
+    .twitter-box button:hover {
+      background-color: #0d8ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="twitter-box">
+    <img src="cat.jpeg" alt="User">
+    <input type="text" placeholder="What's happening?" />
+    <button>Tweet</button>
+  </div>
+
+</body>
 </html>
