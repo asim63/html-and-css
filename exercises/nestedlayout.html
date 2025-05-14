@@ -10,21 +10,73 @@
                 margin-bottom: 0px;
             }
             .Oliver {
-                margin-top: 0px;
+                margin-top: 4px;
+                margin-bottom:4px;
+                font-weight: bold;
+                font-size:15px;
             }
             p {
                 margin-bottom:0px;
                 margin-top:0px;
+                font-family: Arial;
             }
+            .channel-1 {
+                width:22px;
+                border-radius: 100%;
+            }
+            .mutual {
+                display: inline-block;
+                vertical-align: top;
+                opacity:0.6;
+                font-size: 13px;
+                margin-left: 3px;
+            }
+            .add {
+                background-color: rgb(29, 131, 214);
+                color:white;
+                padding: 8px 15px;
+                border: none;
+                border-radius: 3px;
+                margin-top:3px;
+                margin-bottom:9px;
+            }
+            .inner-box {
+                display:inline-block;
+                margin: 4px;
+                box-shadow:1px 3px 6px rgb(0,0,0,0.2);
+            }
+            
 
         </style>
     </head>
     <body>
-        <div>
-            <div>
+        <div class="outer-box">
+            <div class="inner-box">
                 <img class="cat" src="cat.jpeg">
                 <p class="Oliver"> Oliver</p>
-                <div>
+                <div class="horizontal">
+                    <img class="channel-1" 
+                    src="/channel-pictures/channel-1.jpeg">
+                    <p class="mutual"> 2 mutual friends</p>
+                </div>
+                <button class="add"> Add Friend</button>
+            </div>
+
+            <div class="inner-box">
+                <img class="cat" src="cat.jpeg">
+                <p class="Oliver"> Oliver</p>
+                <div class="horizontal">
+                    <img class="channel-1" 
+                    src="/channel-pictures/channel-1.jpeg">
+                    <p class="mutual"> 2 mutual friends</p>
+                </div>
+                <button class="add"> Add Friend</button>
+            </div>
+
+            <div class="inner-box">
+                <img class="cat" src="cat.jpeg">
+                <p class="Oliver"> Oliver</p>
+                <div class="horizontal">
                     <img class="channel-1" 
                     src="/channel-pictures/channel-1.jpeg">
                     <p class="mutual"> 2 mutual friends</p>
@@ -32,6 +84,5 @@
                 <button class="add"> Add Friend</button>
             </div>
         </div>
-
     </body>
 </html>
