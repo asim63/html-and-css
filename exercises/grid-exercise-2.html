@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title> practice grid</title>
+        <style>
+            p{
+                margin-top:0px;
+                margin-bottom:0px;
+                font-family: Roboto, Arial;
+            }
+            .whole-box {
+                display:grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                column-gap: 10px;
+                
+                margin: 8px;
+            }
+            .text-part {
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            }
+            .outer-box {
+                display: grid;
+                grid-template-columns: 210px 210px 1fr;
+            }
+            .inner-box {
+                display: grid;
+                grid-template-columns: auto;
+                
+            }
+            .image {
+                width: 100%;
+                height: 210px;
+                object-fit:cover;
+                
+            }
+            .profile-picture {
+                width: 29px;
+                height:29px;
+                object-fit: cover;
+                border-radius: 100%;
+              
+            }
+            .pfp {
+                display: grid;
+                grid-template-columns: 39px 1fr;
+                align-items:center;
+                vertical-align: top;
+                margin-left: 8px;
+                margin-bottom: 8px;
+            }
+            .Oliver {
+                font-size: 20px;
+                font-weight: bold;
+                margin-left: 8px;
+                margin-bottom: 6px;
+                margin-top: 8px;
+            }
+            .button {
+                margin-left: 8px;
+                margin-bottom: 8px;
+                background-color: rgb(24, 119, 242);
+                color: white;
+                border: none;
+                vertical-align: center;
+                padding: 9px 20px;
+                font-size: 16px;
+                border-radius: 4px;
+                cursor: pointer;
+                font-family: Roboto, Arial;
+                transition: background-color 0.3s;
+            }
+            .button:hover {
+                background-color: rgb(24, 119, 242, 0.8);
+                text-decoration: underline;
+            }
+            .mutual {
+                opacity: 0.7;
+            }
+            .mutual:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="whole-box">
+            <div class="inner-box">
+                <img class="image" src="cat.jpeg">
+                <div class="text-part">
+                    <p class="Oliver"> Oliver</p>
+                    <div class="pfp">
+                         <img class="profile-picture" src="cat.jpeg">
+                         <p class="mutual"> 2 mutual friends</p>
+                    </div>
+                    <button class="button">Add Friend</button>
+                 </div>
+            </div>
+
+            <div class="inner-box">
+                <img class="image" src="cat.jpeg">
+                <div class="text-part">
+                    <p class="Oliver"> Oliver</p>
+                    <div class="pfp">
+                         <img class="profile-picture" src="cat.jpeg">
+                         <p class="mutual"> 2 mutual friends</p>
+                    </div>
+                    <button class="button">Add Friend</button>
+                 </div>
+            </div>
+
+            <div class="inner-box">
+                <img class="image" src="cat.jpeg">
+                <div class="text-part">
+                    <p class="Oliver"> Oliver</p>
+                    <div class="pfp">
+                         <img class="profile-picture" src="cat.jpeg">
+                         <p class="mutual"> 2 mutual friends</p>
+                    </div>
+                    <button class="button">Add Friend</button>
+                 </div>
+            </div>
+        </div>
+    </body>
+</html>
