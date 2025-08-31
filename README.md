@@ -14,5 +14,3 @@ It contains practice projects, and small experiments I built while strengthening
 - Creating simple **web pages and mini projects**  
 
 ---
-
-## 📂 Repository Structure
